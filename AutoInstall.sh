@@ -2,7 +2,7 @@
 
 #Author: WhosStranger
 
-#Colours
+#Colors
 greenColour="\e[0;32m\033[1m"
 endColour="\033[0m\e[0m"
 redColour="\e[0;31m\033[1m"
@@ -16,9 +16,10 @@ echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}By WhosStranger${endCol
 
 
 function root(){  
+
   test -f /usr/bin/nvim
   if [ "$(echo $?)" == "0" ]; then
-    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Nvim Instalado...${endColour} ${greenColour}(V)${endColour} \n"
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Nvim Installed${endColour} ${greenColour}(V)${endColour} \n"
     rm -rf ~/.local/share/nvim
     rm -rf ~/.config/nvim
     apt-get --purge remove neovim -y > /dev/null 2>&1
@@ -27,19 +28,19 @@ function root(){
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim > /dev/null 2>&1
 
   else
-    echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim no instalado...${endColour} ${redColour}(X)${endColour}"
+    echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed${endColour} ${redColour}(X)${endColour}"
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
-    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Ingresa la contrasena del root: ${endColour}\n"
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Enter the root password: ${endColour}"
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
 
   fi
 }
 
 function user(){
-  save -f /usr/bin/nvim
 
+  test -f /usr/bin/nvim
   if [ "$(echo $?)" == "0" ]; then
-    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Nvim Instalado...${endColour} ${greenColour}(V)${endColour} \n"
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Nvim Installed.${endColour} ${greenColour}(V)${endColour} \n"
     sudo rm -rf ~/.local/share/nvim
     sudo rm -rf ~/.config/nvim
     sudo apt-get --purge remove neovim -y > /dev/null 2>&1
@@ -48,7 +49,7 @@ function user(){
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim > /dev/null 2>&1
 
   else
-    echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim no instalado...${endColour} ${redColour}(X)${endColour}"
+    echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed.${endColour} ${redColour}(X)${endColour}"
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
 
@@ -58,10 +59,10 @@ function user(){
 #Funcion Principal
 
 if [ "$(id -u)" == "0" ]; then
-  echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}Recuerda ejecutarlo como root y usuario..${endColour}"
+  echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}Remember to run it as both user and root.${endColour}"
   root
 else 
-  echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}Recuerda ejecutarlo como root y usuario..${endColour}"
+  echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}Remember to run it as both user and root.${endColour}"
   user
 fi
 
