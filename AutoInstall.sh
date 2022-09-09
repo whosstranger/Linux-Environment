@@ -46,7 +46,7 @@ function user(){
     sudo apt-get --purge remove neovim -y > /dev/null 2>&1
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
-    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim > /dev/null 2>&1
+    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
 
   else
     echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed.${endColour} ${redColour}(X)${endColour}"
