@@ -3,7 +3,7 @@
 </h1>
 
 ## About it
-👨‍💻 Script developed in bash to automate the installation of NvChad
+- 👨‍💻 Script developed in bash to automate the installation of NvChad
 
 Clone the repository
 
@@ -30,6 +30,10 @@ nvim AutoInstall.sh
 ```
 
 Original Page: https://nvchad.com/
+
+<h1 align="center">
+  <img src="https://github.com/whosstranger/NvChad-AutoInstall/blob/master/Images/NvChad.png" alt="NvChad" />
+</h1>
 
 ## Contact
 - [WhosStranger](https://whosstranger.github.io/) my WebSite
