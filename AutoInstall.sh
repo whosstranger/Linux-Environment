@@ -12,7 +12,7 @@ purpleColour="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
-echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}By WhosStranger${endColour}\n"
+echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}By WhosStranger${endColour}"
 
 
 function root(){  
@@ -26,13 +26,18 @@ function root(){
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-    rm -rf nvim-linux64.deb
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Deleting downloaded file.${endColour}"
+    rm -rf nvim-linux64.deb 
+    echo -e "\n${blueColour}[*]${endColour} ${purpleColour}Complete configuration.${endColour}"
+
   else
     echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed${endColour} ${redColour}(X)${endColour}"
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-    rm -rf nvim-linux64
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Deleting downloaded file.${endColour}\n"
+    rm -rf nvim-linux64.deb 
+    echo -e "\n${blueColour}[*]${endColour} ${purpleColour}Complete configuration.${endColour}"
   fi
 }
 
@@ -47,13 +52,17 @@ function user(){
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-    rm -rf nvim-linux64 
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Deleting downloaded file.${endColour}"
+    rm -rf nvim-linux64.deb 
+    echo -e "\n${blueColour}[*]${endColour} ${purpleColour}Complete configuration.${endColour}"
   else
     echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed.${endColour} ${redColour}(X)${endColour}"
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-    rm -rf nvim-linux64 
+    echo -e "\n${yellowColour}[*]${endColour} ${purpleColour}Deleting downloaded file.${endColour}"
+    rm -rf nvim-linux64.deb 
+    echo -e "\n${blueColour}[*]${endColour} ${purpleColour}Complete configuration.${endColour}"
   fi
 }
 
