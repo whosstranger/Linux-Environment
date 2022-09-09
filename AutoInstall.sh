@@ -26,13 +26,13 @@ function root(){
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-
+    rm -rf nvim-linux64.deb
   else
     echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed${endColour} ${redColour}(X)${endColour}"
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-
+    rm -rf nvim-linux64
   fi
 }
 
@@ -47,13 +47,13 @@ function user(){
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-
+    rm -rf nvim-linux64 
   else
     echo -e "\n${yellowColour}[x]${endColour} ${purpleColour}Nvim not Installed.${endColour} ${redColour}(X)${endColour}"
     wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb > /dev/null 2>&1
     sudo apt install ./nvim-linux64.deb > /dev/null 2>&1
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 > /dev/null 2>&1
-
+    rm -rf nvim-linux64 
   fi
 }
 
