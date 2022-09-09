@@ -29,7 +29,9 @@ Open a document to end automatic configuration
 nvim AutoInstall.sh
 ```
 
-Original Page: https://nvchad.com/
+## Original Page
+
+- Web Site: https://nvchad.com/
 
 <h1 align="center">
   <img src="https://github.com/whosstranger/NvChad-AutoInstall/blob/master/Images/NvChad.png" alt="NvChad" />
