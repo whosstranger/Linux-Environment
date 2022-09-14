@@ -5,6 +5,8 @@
 ## About it
 - 👨‍💻 Script developed in bash to automate the installation of NvChad
 
+## Execution
+
 Clone the repository
 
 ```sh
