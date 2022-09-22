@@ -10,7 +10,7 @@ purpleColour="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
-echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}By WhosStranger${endColour}"
+echo -e "\n${yellowColour}[!]${endColour} ${purpleColour}By WhosStranger${endColour}\n"
 
 trap ctrl_c INT
 
@@ -19,12 +19,12 @@ function ctrl_c(){
     exit 0
 }
 
-echo -e "\n${yellowColour}[+]${endColour} ${blueColour} Installing required files${endColour}"
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+echo -e "\n${yellowColour}[+]${endColour} ${blueColour} Installing required files${endColour}\n"
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin > /dev/null 2>&1
 echo -e "\n${yellowColour}[+]${endColour} ${blueColour} Setting up the required files${endColour}\n"
 touch kitty
 sudo mv kitty /usr/bin
-ln -f -s ~/.local/kitty.app/bin/kitty /usr/bin/kitty
+sudo ln -f -s ~/.local/kitty.app/bin/kitty /usr/bin/kitty
 touch kitty.conf
 echo "enable_audio_bell no
  
