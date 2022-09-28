@@ -123,6 +123,6 @@ cursor_text_color #1a1b26
 selection_foreground #7aa2f7
 selection_background #28344a" > color.ini
 mv color.ini ~/.config/kitty
-echo -e "\n${yellowColour}[*]${endColour} ${blueColour}Configuration Completed${endColour}"
+echo -e "\n${yellowColour}[*]${endColour} ${blueColour}Configuration Completed${endColour}\n"
 
 
