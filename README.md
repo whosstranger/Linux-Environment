@@ -3,41 +3,8 @@
 </h1>
 
 ## About it
-- 👨‍💻 Script developed in bash to automate the installation of NvChad
-
-## Execution
-
-Clone the repository
-
-```sh
-git clone https://github.com/whosstranger/NvChad-AutoInstall.git
-```
-
-Give execution permissions
-
-```sh
-chmod +x AutoInstall.sh
-```
-
-Run it as user and root
-
-```sh
-./AutoInstall.sh
-```
-
-Open a document to end automatic configuration
-
-```sh
-nvim AutoInstall.sh
-```
-
-## Original Page
-
-- Web Site: https://nvchad.com/
-
-<h1 align="center">
-  <img src="https://github.com/whosstranger/NvChad-AutoInstall/blob/master/Images/NvChad.png" alt="NvChad" />
-</h1>
+- Kitty terminal installation and configuration
+- Installation, configuration and upgrade of nvim
 
 ## Contact
 - [WhosStranger](https://whosstranger.github.io/Index.html) my WebSite
