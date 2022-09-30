@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/whosstranger/NvChad-AutoInstall/blob/master/Images/NvChad.gif" alt="WhosStranger" />
+  <img src="https://github.com/whosstranger/Linux-Environment/blob/master/Images/Entorno.gif" alt="WhosStranger" />
 </h1>
 
 ## About it
