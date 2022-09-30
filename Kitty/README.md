@@ -20,7 +20,7 @@ Give execution permissions
 chmod +x kittyinstall.sh
 ```
 
-Run it as user and root
+Run it
 
 ```sh
 ./kittyinstall.sh
